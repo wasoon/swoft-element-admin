@@ -2,7 +2,7 @@
 
 # 安装
 ```
-  git clone  https://github.com/wasoon/swoft-element-admin.git swoft-element-admin
+  git clone https://github.com/wasoon/swoft-element-admin.git
   cd swoft-element-admin
 ```
   
