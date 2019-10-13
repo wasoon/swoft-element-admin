@@ -73,16 +73,16 @@ export const constantRoutes = [
   {
     path: '/',
     component: Layout,
-    redirect: '/dashboard',
+    redirect: '/admin',
     children: [
       {
-        path: 'dashboard',
+        path: 'admin',
         component: () => import('@/views/dashboard/index'),
         name: 'Dashboard',
         meta: { title: 'dashboard', icon: 'dashboard', affix: true }
       }
     ]
-  },
+  }/*,
   {
     path: '/documentation',
     component: Layout,
@@ -121,7 +121,7 @@ export const constantRoutes = [
         meta: { title: 'profile', icon: 'user', noCache: true }
       }
     ]
-  }
+  }*/
 ]
 
 /**
@@ -170,7 +170,7 @@ export const asyncRoutes = [
       }
     ]
   },
-
+  /*
   {
     path: '/icon',
     component: Layout,
@@ -183,13 +183,13 @@ export const asyncRoutes = [
       }
     ]
   },
-
-  /** when your routing map is too long, you can split it into small modules **/
-  componentsRouter,
+  */
   chartsRouter,
   nestedRouter,
+  // when your routing map is too long, you can split it into small modules
+  componentsRouter,
   tableRouter,
-
+  /*
   {
     path: '/example',
     component: Layout,
@@ -221,7 +221,7 @@ export const asyncRoutes = [
       }
     ]
   },
-
+*/
   {
     path: '/tab',
     component: Layout,
@@ -234,7 +234,7 @@ export const asyncRoutes = [
       }
     ]
   },
-
+  /*
   {
     path: '/error',
     component: Layout,
@@ -259,7 +259,7 @@ export const asyncRoutes = [
       }
     ]
   },
-
+  */
   {
     path: '/error-log',
     component: Layout,
@@ -271,7 +271,7 @@ export const asyncRoutes = [
         meta: { title: 'errorLog', icon: 'bug' }
       }
     ]
-  },
+  }/*,
 
   {
     path: '/excel',
@@ -398,6 +398,7 @@ export const asyncRoutes = [
 
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
+  */
 ]
 
 const createRouter = () => new Router({
