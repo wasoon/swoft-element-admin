@@ -1,4 +1,4 @@
-服务端基于 Swoft 框架，前端基于vue-element-admin框架的后台整体解决方案
+服务端基于 Swoft 框架，前端基于 vue-element-admin UI框架的后台整体解决方案
 
 框架版本：Swoft: 2.0.6, Swoole: 4.4.7
 
