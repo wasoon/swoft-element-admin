@@ -58,6 +58,9 @@ return [
             'worker_num'            => 6
         ]
     ],
+    'httpRouter'  => [
+        'handleMethodNotAllowed' => true
+    ],
     'httpDispatcher'    => [
         // Add global http middleware
         'middlewares'      => [
